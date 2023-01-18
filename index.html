@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header-white">Generate a</h1>
+      <h1 class="header-green">random password</h1>
+      <p class="header-text">Never use an insecure password again.</p>
+      <div class="btn-group">
+        <button class="btn-green" onclick="getPasswords()">
+          Generate passwords
+        </button>
+        <div class="number-input">
+          <p>Length:&nbsp;<p id="password-length">15</p></p>
+          <button class="btn-arrow" onclick="increase()">🡡</button>
+          <button class="btn-arrow" onclick="decrease()">🡣</button>
+        </div>
+      </div>
+      <div class="checkbox-group">
+        <div class="checkbox" onclick="toggleNumbers()" id="number-checkbox">☒ use Numbers</div>
+        <div class="checkbox" onclick="toggleSymbols()" id="symbol-checkbox">☒ use Symbols</div>
+      </div>
+      <div class="divider"></div>
+      <div class="output-container">
+        <p class="output" id="first-output" onclick="saveToClipboard(1)"></p>
+        <p class="output" id="second-output" onclick="saveToClipboard(2)"></p>
+      </div>
+    </div>
+  </body>
+</html>
