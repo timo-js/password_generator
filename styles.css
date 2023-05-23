@@ -95,6 +95,8 @@ button:hover {
   border-radius: 6px;
   height: 25px;
   margin-left: 0.25rem;
+  display: flex;
+  align-items: center;
 }
 
 .btn-arrow:hover {
